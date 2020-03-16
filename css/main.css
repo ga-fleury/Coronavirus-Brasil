@@ -16,10 +16,14 @@ body {
   position: relative;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 90%;
+  -webkit-transform: translate(-50%, -55%);
+          transform: translate(-50%, -55%);
+  width: 80%;
   text-align: right;
+}
+
+#chart {
+  display: block;
 }
 
 a {
@@ -34,5 +38,16 @@ a {
 .info {
   display: block;
   margin-top: 1%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
