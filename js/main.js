@@ -1,20 +1,21 @@
-var dateLabel = cases.map(function(d) {return d.date});
-var seteDias = dateLabel.slice(dateLabel.length - 7, dateLabel.length);
-var worldCasesData = cases.map(function(d) {return d.Brazil});
-var casosSete = worldCasesData.slice(worldCasesData.length - 7, worldCasesData.length);
 
 d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
-  .then(makeChart);
+.then(makeChart);
 
-  function makeChart(cases) {
+function makeChart(cases) {
+  var dateFull = cases.map(function(d) {return d.date});
+  var brasilCasesFull = cases.map(function(d) {return d.Brazil});
+  var dateSeven = dateFull.slice(dateFull.length - 7, dateFull.length);
+  var brasilCasesSeven = brasilCasesFull.slice(brasilCasesFull.length - 7, brasilCasesFull.length);
+
     var chart = new Chart('chart', {
       type: 'line',
       data: {
-        labels: dateLabel,
+        labels: dateFull,
         datasets: [
           {
             label: 'Casos Confirmados no Brasil',
-            data: worldCasesData,
+            data: brasilCasesFull,
             backgroundColor: 'rgba(255, 200, 132, 0)',
             borderColor: 'rgba(50, 168, 82, 1)'
           },
@@ -23,6 +24,4 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
         }
       }
     });
-    console.log(length);
-    console.log(seteDias.length);
   }
