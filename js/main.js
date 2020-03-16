@@ -1,10 +1,12 @@
+var dateLabel = cases.map(function(d) {return d.date});
+var seteDias = dateLabel.slice(dateLabel.length - 7, dateLabel.length);
+var worldCasesData = cases.map(function(d) {return d.Brazil});
+var casosSete = worldCasesData.slice(worldCasesData.length - 7, worldCasesData.length);
+
 d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
   .then(makeChart);
 
   function makeChart(cases) {
-    var dateLabel = cases.map(function(d) {return d.date});
-    var worldCasesData = cases.map(function(d) {return d.Brazil});
-  
     var chart = new Chart('chart', {
       type: 'line',
       data: {
@@ -21,4 +23,6 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
         }
       }
     });
+    console.log(length);
+    console.log(seteDias.length);
   }
