@@ -17,17 +17,17 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
       var chart = new Chart('chart', {
         type: 'line',
         data: {
-          labels: dateSete,
+          labels: dateTrinta,
           datasets: [
             {
               label: 'Casos Confirmados no Brasil',
-              data: brasilCasesSete,
+              data: brasilCasesTrinta,
               backgroundColor: 'rgba(255, 200, 132, 0)',
               borderColor: 'rgba(50, 168, 82, 1)'
             },
             {
               label: 'Novos Casos (dia)',
-              data: newCasesSete,
+              data: newCasesTrinta,
               type: 'bar',
               backgroundColor: 'rgba(252, 240, 3, 0.5)',
             }

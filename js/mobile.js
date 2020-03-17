@@ -12,21 +12,22 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
       // 7-day period
       var dateSete = dateFull.slice(dateFull.length - 7, dateFull.length);
       var brasilCasesSete = brasilCasesFull.slice(brasilCasesFull.length - 7, brasilCasesFull.length);
+      var newCasesSete = newCasesFull.slice(newCasesFull.length - 7, newCasesFull.length);
       
       var chart = new Chart('chart', {
         type: 'line',
         data: {
-          labels: dateTrinta,
+          labels: dateSete,
           datasets: [
             {
               label: 'Casos Confirmados no Brasil',
-              data: brasilCasesTrinta,
+              data: brasilCasesSete,
               backgroundColor: 'rgba(255, 200, 132, 0)',
               borderColor: 'rgba(50, 168, 82, 1)'
             },
             {
               label: 'Novos Casos (dia)',
-              data: newCasesTrinta,
+              data: newCasesSete,
               type: 'bar',
               backgroundColor: 'rgba(252, 240, 3, 0.5)',
             }
