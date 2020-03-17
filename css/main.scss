@@ -15,7 +15,7 @@ body {
 .chart-wrap {
   position: relative;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -55%);
   width: 80%;
   height: 85vh;
@@ -55,5 +55,9 @@ h2 {
 @media screen and (max-width:600px) {
   h1 {
     font-size: 1rem;
+  }
+  .chart-wrap {
+    height: 70vh;
+    top: 40%;
   }
 }
