@@ -44,3 +44,4 @@ d3.csv('../data/brasil_full.csv')
       }
     });
   });
+  

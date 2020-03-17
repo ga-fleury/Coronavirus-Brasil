@@ -22,7 +22,7 @@ d3.csv('../data/brasil_full.csv')
         labels: dateSete,
         datasets: [{
             label: 'Casos Confirmados no Brasil',
-            data: brasilCasesTrinta,
+            data: brasilCasesSete,
             backgroundColor: 'rgba(255, 200, 132, 0)',
             borderColor: 'rgba(50, 168, 82, 1)'
           },
