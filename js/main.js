@@ -1,8 +1,5 @@
-var total;
 d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
-  .then(makeChart);
-
-  function makeChart(cases) {
+  .then(function makeChart(cases) {
     d3.csv('https://covid.ourworldindata.org/data/new_cases.csv').then(function(data) {
       var newCasesFull = data.map(function(d) {return d.Brazil});
       // all-time dates and case numbers
@@ -31,10 +28,10 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
               label: 'Novos Casos (dia)',
               data: newCasesTrinta,
               type: 'bar',
-              backgroundColor: 'rgba(255, 200, 132, 0.5)',
+              backgroundColor: 'rgba(252, 240, 3, 0.5)',
             }
           ]
         }
       });
     });
-  }
+  });
