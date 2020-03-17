@@ -34,7 +34,7 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
           ]
         },
         options: {
-          maintainAspectRatio: false;
+          maintainAspectRatio: false
         }
       });
     });
