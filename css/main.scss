@@ -20,9 +20,6 @@ body {
   text-align: right;
 }
 
-#chart {
-  display: block;
-}
 
 a {
   text-decoration: none;
@@ -46,5 +43,8 @@ h1 {
 @media screen and (max-width:600px) {
   h1 {
     font-size: 1rem;
+  }
+  .chart-wrap {
+    width: 100%;
   }
 }
