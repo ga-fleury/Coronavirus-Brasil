@@ -32,6 +32,9 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
               backgroundColor: 'rgba(252, 240, 3, 0.5)',
             }
           ]
+        },
+        options: {
+          maintainAspectRatio: false
         }
       });
     });

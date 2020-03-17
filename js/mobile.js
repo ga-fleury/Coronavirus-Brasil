@@ -29,9 +29,12 @@ d3.csv('https://covid.ourworldindata.org/data/total_cases.csv')
               label: 'Novos Casos (dia)',
               data: newCasesSete,
               type: 'bar',
-              backgroundColor: 'rgba(252, 240, 3, 0.5)',
+              backgroundColor: 'rgba(252, 240, 3, 0.5)'
             }
           ]
+        },
+        options: {
+          maintainAspectRatio: false;
         }
       });
     });
