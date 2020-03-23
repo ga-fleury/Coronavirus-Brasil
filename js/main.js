@@ -41,13 +41,13 @@ d3.csv('../data/brasil_full.csv')
             data: mortesTrinta,
             backgroundColor: 'rgba(252, 50, 50, 1)',
             borderColor: 'rgba(252, 50, 50, 1)'
-          },
-          {
-            label: 'Casos Suspeitos',
-            data: suspectTrinta,
-            backgroundColor: 'rgba(255, 255, 50, 1)',
-            type: 'bar'
           }
+          // {
+          //   label: 'Casos Suspeitos',
+          //   data: suspectTrinta,
+          //   backgroundColor: 'rgba(255, 255, 50, 1)',
+          //   type: 'bar'
+          // }
         ]
       },
       options: {
